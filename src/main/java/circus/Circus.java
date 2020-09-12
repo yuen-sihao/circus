@@ -75,10 +75,13 @@ public class Circus {
         animalArrayList.remove(louie);
         System.out.println("Index of Louie: " + animalArrayList.indexOf(louie));
 
+        makeAnimalsTalk();
+        System.out.println("Total value of equipments " + calculateValue(equipments));
+        System.out.println("Total value of animals " + calculateValue(animals));
         Cage<Duck> duckCage = new Cage<>();
-        Duck duck = new Duck("Duckie");
+        Duck duck = new Duck("Heuye");
         duckCage.lockUp(duck);
-        Parrot parrot = new Parrot("Parry");
+        Parrot parrot = new Parrot("Popper");
         Cage<Parrot> parrotCage = new Cage<>();
         parrotCage.lockUp(parrot);
 
